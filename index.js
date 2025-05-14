@@ -7,8 +7,8 @@ class RutrackerApi {
     this.pageProvider = new PageProvider();
   }
 
-  login({ username, password }) {
-    return this.pageProvider.login(username, password);
+  login({ cookie }) {
+    return this.pageProvider.login(cookie);
   }
 
   search({ query, sort, order }) {
